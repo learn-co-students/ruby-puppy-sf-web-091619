@@ -1,4 +1,5 @@
 require "spec_helper"
+require "pry"
 
 describe "Dog" do
 
@@ -11,6 +12,8 @@ describe "Dog" do
   let!(:pluto) { Dog.new("Pluto") }
   let!(:fido) { Dog.new("Fido") }
   let!(:maddy) { Dog.new("Maddy") }
+
+
 
   after(:each) do
     Dog.class_variable_set(:@@all, [])
